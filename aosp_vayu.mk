@@ -13,6 +13,9 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common PixelExperience configurations
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_USES_AOSP_RECOVERY := true
 
 PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
